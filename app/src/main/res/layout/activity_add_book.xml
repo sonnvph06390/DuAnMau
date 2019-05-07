@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="8dp">
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edMaSach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mã sách" />
+
+    </android.support.design.widget.TextInputLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Spinner
+            android:id="@+id/spnTheLoai"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Spinner>
+        <ImageView
+            android:src="@drawable/button_plus_green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edTenSach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tên sách" />
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edTacGia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tác giả" />
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edNXB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhà xuất bản " />
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:inputType="number"
+            android:id="@+id/edGiaBan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Giá bán " />
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:inputType="number"
+            android:id="@+id/edSoLuong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Số lượng" />
+
+    </android.support.design.widget.TextInputLayout>
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnThemSach"
+            android:textAllCaps="false"
+            android:text="Thêm"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnHuySach"
+            android:textAllCaps="false"
+            android:text="Hủy"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button
+        android:layout_marginTop="8dp"
+        android:id="@+id/btnShowSach"
+        android:textAllCaps="false"
+        android:text="Show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
